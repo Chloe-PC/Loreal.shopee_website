@@ -220,13 +220,23 @@
 
                     <!-- cart__layout -->
                     <div class="header__cart">
-                        <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
-                        
-                        <div class="header__cart-body header__cart-list--has-item">
+                        <div class="header__cart-wrap">
+                            <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+                            
+                            <!-- Has cart: header__cart-list--has-item cho vào class header__cart-body -->
+                             <!-- No cart: header__cart-list--no-item cho vào class header__cart-body -->
+                            <div class="header__cart-body header__cart-list--has-item">
+                                <!-- No cart -->
+                                <div class="header__cart-body-empty">
+                                    <img src="./Shopee_assets/Shopee_img/no-cart.png" alt="no-cart" class="header__cart-list-no-cart-img">
+                                    <p class="header__cart-list-no-cart-msg">Chưa có sản phẩm</p>
+                                </div>
+                                
+                                <!-- Has cart -->
                                 <header class="header__cart-heading">
                                     <h3>Sản phẩm mới thêm</h3>
                                 </header>
-
+    
                                 <ul class="header__cart-list">
                                     <li class="header__cart-item">
                                         <a href="" class="header__cart-link">
@@ -237,53 +247,54 @@
                                             </div>
                                         </a>
                                     </li>
-
-                                    <li class="header__cart-item">
-                                        <a href="" class="header__cart-link">
-                                            <img src="./Shopee_assets/Shopee_img/p2.jpg" alt="p2" class="header__cart-img">
-                                            <div class="header__cart-info">
-                                                <span class="header__cart-name">Áo trễ vai nữ, áo kiểu nữ phong cách...</span>
-                                                <span class="header__cart-cost">đ124.000</span>
-                                            </div>
-                                        </a>
-                                    </li>
-
-                                    <li class="header__cart-item ">
-                                        <a href="" class="header__cart-link">
-                                            <img src="./Shopee_assets/Shopee_img/p3.jpg" alt="Loreal" class="header__cart-img">
-                                            <div class="header__cart-info">
-                                                <span class="header__cart-name">[MÀU MỚI VỀ] Áo trễ vai tay dài Kill...</span>
-                                                <span class="header__cart-cost">đ25.000</span>
-                                            </div>
-                                        </a>
-                                    </li>
-
-                                    <li class="header__cart-item ">
-                                        <a href="" class="header__cart-link">
-                                            <img src="./Shopee_assets/Shopee_img/p4.jpg" alt="p4" class="header__cart-img">
-                                            <div class="header__cart-info">
-                                                <span class="header__cart-name">Váy 2 dây maxi trắng nữ cúp ngực xếp...</span>
-                                                <span class="header__cart-cost">đ245.000</span>
-                                            </div>
-                                        </a>
-                                    </li>
-
-                                    <li class="header__cart-item ">
-                                        <a href="" class="header__cart-link">
-                                            <img src="./Shopee_assets/Shopee_img/p5.jpg" alt="p5" class="header__cart-img">
-                                            <div class="header__cart-info">
-                                                <span class="header__cart-name">Chân váy ren xếp tầng dáng ngắn ...</span>
-                                                <span class="header__cart-cost">đ95.000</span>
-                                            </div>
-                                        </a>
-                                    </li>
-
-                                    <footer class="header__cart-footer">
-                                        <a href="" class="header__cart-footer-notify">225 thêm vào giỏ</a>
-                                        <button class="header__cart-footer-btn">Xem giỏ hàng</button>
-                                    </footer>
-                                </ul>
-                        
+    
+                                        <li class="header__cart-item">
+                                            <a href="" class="header__cart-link">
+                                                <img src="./Shopee_assets/Shopee_img/p2.jpg" alt="p2" class="header__cart-img">
+                                                <div class="header__cart-info">
+                                                    <span class="header__cart-name">Áo trễ vai nữ, áo kiểu nữ phong cách...</span>
+                                                    <span class="header__cart-cost">đ124.000</span>
+                                                </div>
+                                            </a>
+                                        </li>
+    
+                                        <li class="header__cart-item ">
+                                            <a href="" class="header__cart-link">
+                                                <img src="./Shopee_assets/Shopee_img/p3.jpg" alt="Loreal" class="header__cart-img">
+                                                <div class="header__cart-info">
+                                                    <span class="header__cart-name">[MÀU MỚI VỀ] Áo trễ vai tay dài Kill...</span>
+                                                    <span class="header__cart-cost">đ25.000</span>
+                                                </div>
+                                            </a>
+                                        </li>
+    
+                                        <li class="header__cart-item ">
+                                            <a href="" class="header__cart-link">
+                                                <img src="./Shopee_assets/Shopee_img/p4.jpg" alt="p4" class="header__cart-img">
+                                                <div class="header__cart-info">
+                                                    <span class="header__cart-name">Váy 2 dây maxi trắng nữ cúp ngực xếp...</span>
+                                                    <span class="header__cart-cost">đ245.000</span>
+                                                </div>
+                                            </a>
+                                        </li>
+    
+                                        <li class="header__cart-item ">
+                                            <a href="" class="header__cart-link">
+                                                <img src="./Shopee_assets/Shopee_img/p5.jpg" alt="p5" class="header__cart-img">
+                                                <div class="header__cart-info">
+                                                    <span class="header__cart-name">Chân váy ren xếp tầng dáng ngắn ...</span>
+                                                    <span class="header__cart-cost">đ95.000</span>
+                                                </div>
+                                            </a>
+                                        </li>
+    
+                                        <footer class="header__cart-footer">
+                                            <a href="" class="header__cart-footer-notify">225 thêm vào giỏ</a>
+                                            <button class="header__cart-footer-btn">Xem giỏ hàng</button>
+                                        </footer>
+                                    </ul>
+                            
+                            </div>
                         </div>
                     </div>
                 </div>
