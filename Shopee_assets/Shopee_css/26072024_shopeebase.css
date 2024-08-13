@@ -22,6 +22,7 @@ html {
     box-sizing: border-box;
 }
 
+/* Responsive */
 .grid {
     width: 1200px;
     max-width: 100%;
@@ -29,12 +30,46 @@ html {
 }
 
 .grid__full-width {
-    width: 100%;
+    display: block;
+    padding: 0;
 }
 
-.grid__row-width {
+.grid__row {
     display: flex;
     flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+/* test */
+.grid__column-2 {
+     padding-left: 5px;
+     padding-right: 5px;
+     width: 16.6667%;
+}
+
+.grid__column-3 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 33.3334%;
+}
+
+.grid__column-5 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+}
+
+.grid__column-2-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+}
+
+.grid__column-10 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 83.3334%;
 }
 
 /* Animation */
@@ -86,7 +121,7 @@ html {
 
 /* button style */
 .btn {
-    min-width: 142px;
+    min-width: 124px;
     height: 34px;
     text-decoration: none;
     border: none;
@@ -97,7 +132,7 @@ html {
     cursor: pointer;
     color: var(--text-color);
     background-color: var(--white-color);
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     line-height: 1.6rem;
@@ -124,3 +159,62 @@ html {
     background-color: #c3c3c3;
 }
 
+/* selection */
+.select-input {
+    height: 34px;
+    padding: 0 12px;
+    border-radius: 2px;
+    min-width: 200px;
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.select-input:hover .select-input__list {
+    display: block;
+}
+
+.select-input__label {
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.select-input__icon {
+
+}
+
+.select-input__list {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25px;
+    background-color: var(--white-color);
+    border-radius: 2px;
+    list-style: none;
+    padding: 8px 16px;
+    display: none;
+    animation: fadeIn ease-in 0.1s;
+    z-index: 1;
+}
+
+.select-input__item {
+
+}
+
+.select-input__link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    display: block;
+    padding: 4px 0;
+}
+
+.select-input__link:hover {
+    color: var(--primary-color);
+}
+
+.home-pagination {
+    margin: 48px 0 32px 0;
+}
